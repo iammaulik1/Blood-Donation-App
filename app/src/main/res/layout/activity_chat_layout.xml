@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_10"
+        android:orientation="vertical"
+        tools:context=".Activity.Chat_Activity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/userChat_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red_500"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                app:contentInsetStartWithNavigation="0dp"
+                app:navigationIcon="@drawable/ic_white_arrow"
+
+                app:titleTextColor="@color/white" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/userIcon"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:src="@drawable/ic_black_person" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:layout_marginLeft="@dimen/_8sdp"
+
+                            android:text="Username"
+                            android:textSize="@dimen/_15sdp"/>
+                        <TextView
+                            android:id="@+id/contactNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:layout_marginLeft="@dimen/_8sdp"
+
+                            android:text="contact number"
+                            android:textSize="@dimen/_10sdp"/>
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/red_50">
+
+                    <!-- Add your LinearLayouts with TextViews here -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:gravity="right"
+                        android:layout_margin="@dimen/_10sdp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hello.."
+                            android:padding="@dimen/_5sdp"
+                            android:textSize="@dimen/_17sdp"
+                            android:background="@drawable/background_send_message"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:gravity="left"
+                        android:layout_margin="@dimen/_10sdp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Heyy!!"
+                            android:padding="@dimen/_5sdp"
+                            android:textSize="@dimen/_17sdp"
+                            android:background="@drawable/background_received_message"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:gravity="right"
+                        android:layout_margin="@dimen/_10sdp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="How Are You ?"
+                            android:padding="@dimen/_5sdp"
+                            android:textSize="@dimen/_17sdp"
+                            android:background="@drawable/background_send_message"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:gravity="left"
+                        android:layout_margin="@dimen/_10sdp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="I'm good , How are You ?"
+                            android:padding="@dimen/_5sdp"
+                            android:textSize="@dimen/_17sdp"
+                            android:background="@drawable/background_received_message"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:gravity="right"
+                        android:layout_margin="@dimen/_10sdp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="I'm fine, i need help of yours."
+                            android:padding="@dimen/_5sdp"
+                            android:textSize="@dimen/_17sdp"
+                            android:background="@drawable/background_send_message"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:gravity="left"
+                        android:layout_margin="@dimen/_10sdp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="yes say ,how may i help you ?"
+                            android:padding="@dimen/_5sdp"
+                            android:textSize="@dimen/_17sdp"
+                            android:background="@drawable/background_received_message"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:gravity="right"
+                        android:layout_margin="@dimen/_10sdp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Can you donate me your blood ?"
+                            android:padding="@dimen/_5sdp"
+                            android:textSize="@dimen/_17sdp"
+                            android:background="@drawable/background_send_message"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:gravity="left"
+                        android:layout_margin="@dimen/_10sdp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="yes sure !!"
+                            android:padding="@dimen/_5sdp"
+                            android:textSize="@dimen/_17sdp"
+                            android:background="@drawable/background_received_message"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:gravity="right"
+                        android:layout_margin="@dimen/_10sdp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="So , where do you live?"
+                            android:padding="@dimen/_5sdp"
+                            android:textSize="@dimen/_17sdp"
+                            android:background="@drawable/background_send_message"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:gravity="left"
+                        android:layout_margin="@dimen/_10sdp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="i live in Surat City , gujarat."
+                            android:padding="@dimen/_5sdp"
+                            android:textSize="@dimen/_17sdp"
+                            android:background="@drawable/background_received_message"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:gravity="right"
+                        android:layout_margin="@dimen/_10sdp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="okay nice , i also live in surat."
+                            android:padding="@dimen/_5sdp"
+                            android:textSize="@dimen/_17sdp"
+                            android:background="@drawable/background_send_message"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:gravity="left"
+                        android:layout_margin="@dimen/_10sdp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="so , how can i donate blood to you ?"
+                            android:padding="@dimen/_5sdp"
+                            android:textSize="@dimen/_17sdp"
+                            android:background="@drawable/background_received_message"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:gravity="right"
+                        android:layout_margin="@dimen/_10sdp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="you send me your current location"
+                            android:padding="@dimen/_5sdp"
+                            android:textSize="@dimen/_17sdp"
+                            android:background="@drawable/background_send_message"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:gravity="left"
+                        android:layout_margin="@dimen/_10sdp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="okay sure !!"
+                            android:padding="@dimen/_5sdp"
+                            android:textSize="@dimen/_17sdp"
+                            android:background="@drawable/background_received_message"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:gravity="right"
+                        android:layout_margin="@dimen/_10sdp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="I'll come to receive it tomorrow."
+                            android:padding="@dimen/_5sdp"
+                            android:textSize="@dimen/_17sdp"
+                            android:background="@drawable/background_send_message"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:gravity="left"
+                        android:layout_margin="@dimen/_10sdp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="okay , No Problem ."
+                            android:padding="@dimen/_5sdp"
+                            android:textSize="@dimen/_17sdp"
+                            android:background="@drawable/background_received_message"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:gravity="right"
+                        android:layout_margin="@dimen/_10sdp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="See you tomorrow.."
+                            android:padding="@dimen/_5sdp"
+                            android:textSize="@dimen/_17sdp"
+                            android:background="@drawable/background_send_message"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:gravity="left"
+                        android:layout_margin="@dimen/_10sdp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="yeah Suree"
+                            android:padding="@dimen/_5sdp"
+                            android:textSize="@dimen/_17sdp"
+                            android:background="@drawable/background_received_message"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:gravity="right"
+                        android:layout_margin="@dimen/_10sdp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Thank you so much !!!"
+                            android:padding="@dimen/_5sdp"
+                            android:textSize="@dimen/_17sdp"
+                            android:background="@drawable/background_send_message"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:gravity="left"
+                        android:layout_margin="@dimen/_10sdp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Anytime..."
+                            android:padding="@dimen/_5sdp"
+                            android:textSize="@dimen/_17sdp"
+                            android:background="@drawable/background_received_message"/>
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/messageInputField"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Type your message"
+                android:padding="@dimen/_8sdp"
+                android:textColor="@color/white"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/background_chat_input"/>
+
+            <ImageView
+                android:id="@+id/sendButton"
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_red_send"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/_10sdp"
+                />
+
+        </LinearLayout>>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+</layout>
+

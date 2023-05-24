@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1090533099256",
+    "project_id": "blood-donation-app-2-b6e63",
+    "storage_bucket": "blood-donation-app-2-b6e63.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1090533099256:android:29cd534f34b5207eef5d0d",
+        "android_client_info": {
+          "package_name": "com.stepup.blooddonationapp2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1090533099256-me29oi541hfl6tm04hc4fj677r90qiv8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBkqKHW6oL3RwetTGFzqHEiqPsdGnQAuc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1090533099256-me29oi541hfl6tm04hc4fj677r90qiv8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

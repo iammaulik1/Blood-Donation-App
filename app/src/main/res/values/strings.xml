@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Blood Donation App </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_user_page">UserPage</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment1">Fragment1</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="large_text"></string>
+    <string name="thumbnail_image_view_desc">Youtube Video thumbnail image view</string>
+    <string name="get_account_permission">This application needs some permissions to provide some functionality</string>
+    <string name="try_again">try again</string>
+    <string name="exit">exit</string>
+
+    <!--<string-array name="video_id_array">
+        <item>CqhpNxI8qYw</item>
+        <item>sasCrpgHDy8</item>
+        <item>iJeh3x09Ya8</item>
+        <item>B5zRaD7B504</item>
+        <item>9qWHzj8k-Uo</item>
+        <item>RjiK45wC924</item>
+        <item>RH3zaLO8H4E</item>
+        <item>o14pyzosjvk</item>
+        <item>5SQrpBQne7A</item>
+        <item>5WJ3r67ORxo</item>
+    </string-array>-->
+    <string name="title_activity_donation">Donation</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_near_by">Map</string>
+    <string name="title_activity_donor_location">Map</string>
+    <string name="app_name1">Blood Donation App</string>
+    <string name="default_notification_channel_id">Channel</string>
+    <string name="default_notification_channel_name">Name</string>
+    <string name="developed_by_maulik_patel_stepup_technosys">Developed by : Maulik Patel , Stepup technosys</string>
+    <string name="title_activity_location_selection">LocationSelectionActivity</string>
+    <string name="title_activity_near_by_users">NearByUsersActivity</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomImageView">
+        <attr name="civ_shadow" format="boolean" />
+        <attr name="civ_shadow_radius" format="dimension" />
+        <attr name="civ_border" format="boolean" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/grey_10"
+        tools:context=".Activity.Send_Request">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/send_request_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/red_500"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:navigationIcon="@drawable/ic_white_arrow"
+            app:titleTextColor="@color/white" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_15sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_large">
+
+                    <ImageView
+                        android:layout_width="@dimen/_90sdp"
+                        android:layout_height="@dimen/_90sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/img_drop" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:text="Request For Blood"
+                        android:textColor="@color/red_500"
+                        android:textSize="@dimen/_18sdp"
+                        android:textStyle="bold" />
+
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/spacing_mlarge" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select BloodGroup"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_70sdp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btnap"
+                            android:layout_width="@dimen/_55sdp"
+                            android:layout_height="@dimen/_55sdp"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/shape_circle_outline"
+                            android:gravity="center"
+                            android:text="A+"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15sdp" />
+
+                        <Button
+                            android:id="@+id/btnbp"
+                            android:layout_width="@dimen/_55sdp"
+                            android:layout_height="@dimen/_55sdp"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/shape_circle_outline"
+                            android:gravity="center"
+                            android:text="B+"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15sdp" />
+
+                        <Button
+                            android:id="@+id/btnop"
+                            android:layout_width="@dimen/_55sdp"
+                            android:layout_height="@dimen/_55sdp"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/shape_circle_outline"
+                            android:gravity="center"
+                            android:text="O+"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15sdp" />
+
+                        <Button
+                            android:id="@+id/btnabp"
+                            android:layout_width="@dimen/_55sdp"
+                            android:layout_height="@dimen/_55sdp"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/shape_circle_outline"
+                            android:gravity="center"
+                            android:text="AB+"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sdp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_70sdp"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center">
+
+                        <Button
+                            android:id="@+id/btnan"
+                            android:layout_width="@dimen/_55sdp"
+                            android:layout_height="@dimen/_55sdp"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/shape_circle_outline"
+                            android:gravity="center"
+                            android:text="A-"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15sdp" />
+
+                        <Button
+                            android:id="@+id/btnbn"
+                            android:layout_width="@dimen/_55sdp"
+                            android:layout_height="@dimen/_55sdp"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/shape_circle_outline"
+                            android:gravity="center"
+                            android:text="B-"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15sdp" />
+
+                        <Button
+                            android:id="@+id/btnon"
+                            android:layout_width="@dimen/_55sdp"
+                            android:layout_height="@dimen/_55sdp"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/shape_circle_outline"
+                            android:gravity="center"
+                            android:text="O-"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_15sdp" />
+
+                        <Button
+                            android:id="@+id/btnabn"
+                            android:layout_width="@dimen/_55sdp"
+                            android:layout_height="@dimen/_55sdp"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:layout_weight="1"
+                            android:background="@drawable/shape_circle_outline"
+                            android:gravity="center"
+                            android:text="AB-"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_14sdp" />
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/spacing_mlarge" />
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_minus4sdp"
+                        android:layout_marginRight="@dimen/_minus4sdp"
+                        android:hint="Enter Mobile Number"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edt_mobile"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="phone"
+                            android:maxLength="10"
+                            android:maxLines="1"
+                            android:singleLine="true"
+
+                            android:importantForAutofill="no" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_minus4sdp"
+                        android:layout_marginRight="@dimen/_minus4sdp"
+                        android:hint="Enter Message">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edt_msg"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:singleLine="true"
+
+                            tools:ignore="LabelFor"
+                            android:importantForAutofill="no" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/spacing_mlarge" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_edittext">
+
+                        <ImageView
+                            android:layout_width="@dimen/_24sdp"
+                            android:layout_height="@dimen/_24sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            app:srcCompat="@drawable/ic_red_location" />
+
+                        <Button
+                            android:id="@+id/btn_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_3sdp"
+                            android:background="@color/transparent"
+                            android:textAllCaps="false"
+                            android:text="Select Location From Map" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/spacing_mlarge" />
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_minus4sdp"
+                        android:layout_marginRight="@dimen/_minus4sdp"
+                        android:hint="Enter City">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edt_city"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:singleLine="true"
+                             />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/spacing_mlarge" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_minus4sdp"
+                        android:layout_marginRight="@dimen/_minus4sdp"
+                        android:hint="Enter State">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edt_state"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/spacing_mlarge" />
+
+
+                    <Button
+                        android:id="@+id/btn_send_request"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_btn_red"
+                        android:padding="@dimen/_15sdp"
+                        android:text="Send Request"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</layout>
